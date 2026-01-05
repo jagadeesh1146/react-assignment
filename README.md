@@ -1,41 +1,45 @@
 # React.js Employee Management Dashboard
 
 ## 📌 Project Overview
-This is a **React.js Employee Management Dashboard** built as part of a web assignment.  
-The application includes **mock authentication**, an **employee dashboard**, and **CRUD operations** with a clean and responsive UI using **Bootstrap**.
+This project is a **React.js Employee Management Dashboard** developed as part of a web assignment.  
+It includes **mock authentication**, **protected routes**, and **employee CRUD operations** with a clean and responsive UI built using **Bootstrap**.
 
-The project focuses on **code clarity, reusable components, and user-friendly UI/UX**.
+The application demonstrates real-world React concepts such as **Context API**, **state management**, **search & filtering**, and **data persistence**.
 
 ---
 
 ## 🛠️ Tech Stack
 - React.js
 - React Router DOM
+- Context API
 - Bootstrap
 - JavaScript (ES6)
-- LocalStorage (for mock authentication & data storage)
+- LocalStorage
 
 ---
 
 ## 🔐 Authentication
-- Mock login functionality
-- Username: `admin`
-- Password: `admin123`
-- Redirects to Dashboard after successful login
-- Dashboard access is protected using Protected Routes
+- Mock login implementation
+- Credentials:
+  - **Username:** `admin`
+  - **Password:** `admin123`
+- Authentication state is managed using **Context API**
+- Dashboard is protected using **Protected Routes**
+- Login state persists after page refresh
 
 ---
 
 ## ✨ Features
 
 ### Dashboard
-- Employee management interface
+- Protected dashboard access
 - Logout functionality
 
 ### Employee Management
 - Add Employee
 - Edit Employee
 - Delete Employee (with confirmation)
+- Active / Inactive status
 - Print employee list
 
 ### Employee Form
@@ -43,22 +47,26 @@ The project focuses on **code clarity, reusable components, and user-friendly UI
 - Gender
 - Date of Birth
 - Profile Image Upload
-- Image preview before save
-- Basic form validation
-- Same form reused for Add & Edit
+- Image Preview before save
+- Active / Inactive checkbox
+- Form validation
+- Same form used for Add & Edit
 
-### UI / UX
-- Responsive layout using Bootstrap
-- Centered login form
-- Clean tables and forms
-- Empty state handling
-- Print support using browser print
+### Search & Filter
+- Search employees by name
+- Filter by gender
+- Filter by active / inactive status
+- Combined filtering
+- Clear filters option
+
+### Data Persistence
+- Employee data stored in `localStorage`
+- Data remains available after browser refresh
 
 ---
 
-## 🖨️ Print Feature
-- Implemented using `window.print()`
-- Opens browser print dialog
+##  Print Feature
+- Implemented using browser native `window.print()`
 - Allows printing or saving employee list as PDF
 
 ---
